@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyExecutive | Planejar Viagem</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header sticky-header">
+    <div class="header-container">
+      <a href="dashboard.html" class="brand-title">SkyExecutive</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="dashboard.html" class="active">Início</a></li>
+          <li><a href="reservar.html">Reservas</a></li>
+          <li><a href="index.html">Sobre</a></li>
+          <li><a href="login.html" class="nav-logout">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="jet-hero-section">
+      <div class="jet-hero-overlay">
+        <span class="sub-tag">AVIAÇÃO EXECUTIVA</span>
+        <h1>O céu, no seu <em>tempo.</em></h1>
+        <p>Fretamento privado com discrição, precisão e hospitalidade brasileira.</p>
+      </div>
+    </section>
+
+    <section class="dashboard-content">
+      <div class="dashboard-container">
+        
+        <div class="planner-card">
+          <div class="section-divider">
+            <span>Planejar nova viagem</span>
+          </div>
+
+          <form action="voos.html" method="GET" class="planner-form">
+            <div class="form-group">
+              <label for="origem">Origem</label>
+              <input type="text" id="origem" name="origem" placeholder="Cidade ou aeroporto de saída" required>
+            </div>
+
+            <div class="form-group">
+              <label for="destino">Destino</label>
+              <input type="text" id="destino" name="destino" placeholder="Cidade ou aeroporto de chegada" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Continuar</button>
+          </form>
+        </div>
+
+        <div class="fleet-card-section">
+          <div class="section-divider">
+            <span>Nossa Frota</span>
+          </div>
+
+          <article class="fleet-preview-card">
+            <div class="fleet-image-container">
+              <img src="cabine.png" alt="Interior luxuoso da cabine executiva">
+            </div>
+            <div class="fleet-card-body">
+              <p>Viaje com o máximo de conforto em aeronaves modernas</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 SkyExecutive. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
