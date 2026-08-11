@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyExecutive | Reservar Voo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-title">SkyExecutive</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="voos.html">Voos Disponíveis</a></li>
+          <li><a href="login.html">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <section class="search-section">
+      <div class="search-header">
+        <h2>Pesquisar Voo Executivo</h2>
+        <p>Selecione a origem, o destino e os detalhes da sua viagem.</p>
+      </div>
+
+      <form action="voos.html" class="search-form-grid">
+        <div class="form-group">
+          <label for="origem">Origem</label>
+          <input type="text" id="origem" placeholder="Cidade ou Aeroporto de Saída" required>
+        </div>
+
+        <div class="form-group">
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" placeholder="Cidade ou Aeroporto de Chegada" required>
+        </div>
+
+        <div class="form-group">
+          <label for="data">Data de Ida</label>
+          <input type="date" id="data" required>
+        </div>
+
+        <div class="form-group">
+          <label for="passageiros">Passageiros</label>
+          <select id="passageiros">
+            <option value="1">1 Passageiro</option>
+            <option value="2">2 Passageiros</option>
+            <option value="4">4 Passageiros</option>
+            <option value="8">8+ Passageiros (Grupo/Empresa)</option>
+          </select>
+        </div>
+
+        <div class="form-group grid-full">
+          <button type="submit" class="btn btn-primary btn-block">Buscar Voos</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 SkyExecutive. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
