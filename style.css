@@ -124,19 +124,29 @@ body {
 }
 
 /* ==========================================================================
-   4. PÁGINA INICIAL / HERO (CSS Grid Macro)
+   4. PÁGINA INICIAL / HERO (Centralizado)
    ========================================================================== */
 .hero-section {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Transforma o grid em uma única coluna centralizada */
 .hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px; /* Limita a largura para o texto não ficar muito espalhado */
 }
 
 .logo-badge {
@@ -168,10 +178,13 @@ body {
   color: #1a252f;
 }
 
+/* Alinha os botões lado a lado, mas no centro */
 .action-buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .legal-text {
@@ -187,12 +200,14 @@ body {
 .hero-visual {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 500px; /* Deixa o card com um tamanho bem proporcional no meio */
 }
 
 .preview-card {
   background-color: var(--color-primary);
   color: var(--color-bg-light);
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   text-align: center;
